@@ -15,6 +15,8 @@
 		221A2DE41B0E72C700E356C3 /* CircleNavigationTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A2DE31B0E72C700E356C3 /* CircleNavigationTransitionTests.swift */; };
 		221A2DEF1B0E785900E356C3 /* IMG_0024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DED1B0E785900E356C3 /* IMG_0024.jpg */; };
 		221A2DF01B0E785900E356C3 /* IMG_0023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */; };
+		221A2DF21B0E7ADB00E356C3 /* NavigationControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A2DF11B0E7ADB00E356C3 /* NavigationControllerDelegate.swift */; };
+		221A2DF41B0E7C6D00E356C3 /* CircleTransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A2DF31B0E7C6D00E356C3 /* CircleTransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		221A2DE31B0E72C700E356C3 /* CircleNavigationTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNavigationTransitionTests.swift; sourceTree = "<group>"; };
 		221A2DED1B0E785900E356C3 /* IMG_0024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0024.jpg; sourceTree = "<group>"; };
 		221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0023.jpg; sourceTree = "<group>"; };
+		221A2DF11B0E7ADB00E356C3 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
+		221A2DF31B0E7C6D00E356C3 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				221A2DCD1B0E72C700E356C3 /* AppDelegate.swift */,
 				221A2DCF1B0E72C700E356C3 /* ViewController.swift */,
+				221A2DF11B0E7ADB00E356C3 /* NavigationControllerDelegate.swift */,
+				221A2DF31B0E7C6D00E356C3 /* CircleTransitionAnimator.swift */,
 				221A2DED1B0E785900E356C3 /* IMG_0024.jpg */,
 				221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */,
 				221A2DD11B0E72C700E356C3 /* Main.storyboard */,
@@ -221,7 +227,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				221A2DD01B0E72C700E356C3 /* ViewController.swift in Sources */,
+				221A2DF41B0E7C6D00E356C3 /* CircleTransitionAnimator.swift in Sources */,
 				221A2DCE1B0E72C700E356C3 /* AppDelegate.swift in Sources */,
+				221A2DF21B0E7ADB00E356C3 /* NavigationControllerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
