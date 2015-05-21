@@ -13,6 +13,8 @@
 		221A2DD51B0E72C700E356C3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DD41B0E72C700E356C3 /* Images.xcassets */; };
 		221A2DD81B0E72C700E356C3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DD61B0E72C700E356C3 /* LaunchScreen.xib */; };
 		221A2DE41B0E72C700E356C3 /* CircleNavigationTransitionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221A2DE31B0E72C700E356C3 /* CircleNavigationTransitionTests.swift */; };
+		221A2DEF1B0E785900E356C3 /* IMG_0024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DED1B0E785900E356C3 /* IMG_0024.jpg */; };
+		221A2DF01B0E785900E356C3 /* IMG_0023.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		221A2DDD1B0E72C700E356C3 /* CircleNavigationTransitionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleNavigationTransitionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		221A2DE21B0E72C700E356C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		221A2DE31B0E72C700E356C3 /* CircleNavigationTransitionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleNavigationTransitionTests.swift; sourceTree = "<group>"; };
+		221A2DED1B0E785900E356C3 /* IMG_0024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0024.jpg; sourceTree = "<group>"; };
+		221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0023.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,8 @@
 			children = (
 				221A2DCD1B0E72C700E356C3 /* AppDelegate.swift */,
 				221A2DCF1B0E72C700E356C3 /* ViewController.swift */,
+				221A2DED1B0E785900E356C3 /* IMG_0024.jpg */,
+				221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */,
 				221A2DD11B0E72C700E356C3 /* Main.storyboard */,
 				221A2DD41B0E72C700E356C3 /* Images.xcassets */,
 				221A2DD61B0E72C700E356C3 /* LaunchScreen.xib */,
@@ -193,6 +199,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				221A2DD31B0E72C700E356C3 /* Main.storyboard in Resources */,
+				221A2DF01B0E785900E356C3 /* IMG_0023.jpg in Resources */,
+				221A2DEF1B0E785900E356C3 /* IMG_0024.jpg in Resources */,
 				221A2DD81B0E72C700E356C3 /* LaunchScreen.xib in Resources */,
 				221A2DD51B0E72C700E356C3 /* Images.xcassets in Resources */,
 			);

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="UG3-1R-iF4">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircleNavigationTransition" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,132 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXD-E1-Cyx">
+                                <rect key="frame" x="550" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="A8A-fy-BB2"/>
+                                    <constraint firstAttribute="width" constant="44" id="LeI-Ev-FiO"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circleTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yAa-FV-fGh"/>
+                                    <segue destination="6E3-Aa-boC" kind="show" identifier="PushSegue" id="8Qo-0k-zgd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0024.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vSH-3j-VMa">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="1eJ-JP-1Ob"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="300" id="47K-x0-TES"/>
+                                    <constraint firstAttribute="width" constant="300" id="6v5-kt-Jic"/>
+                                    <constraint firstAttribute="height" constant="300" id="ykk-37-PXE"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.24313725489999999" green="0.79607843140000001" blue="0.74509803919999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="vSH-3j-VMa" secondAttribute="centerX" id="DfK-9b-kJO"/>
+                            <constraint firstItem="XXD-E1-Cyx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="W5m-j8-mXL"/>
+                            <constraint firstItem="XXD-E1-Cyx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="WXr-20-ANg"/>
+                            <constraint firstItem="XXD-E1-Cyx" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="10" id="Wjk-m4-fe6"/>
+                            <constraint firstItem="XXD-E1-Cyx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ifl-VS-GJJ"/>
+                            <constraint firstAttribute="centerY" secondItem="vSH-3j-VMa" secondAttribute="centerY" id="kSs-8D-9XS"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="QGD-tN-XGT"/>
+                    <connections>
+                        <outlet property="button" destination="XXD-E1-Cyx" id="4ee-hP-dNK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="937" y="-412"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Xks-i7-ZIj">
+            <objects>
+                <viewController id="6E3-Aa-boC" customClass="ViewController" customModule="CircleNavigationTransition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MTr-Zs-Mrj"/>
+                        <viewControllerLayoutGuide type="bottom" id="LvS-r9-AN4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YYD-oO-vrn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Uw-82-PXI">
+                                <rect key="frame" x="550" y="30" width="44" height="44"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="fc0-Ns-kRK"/>
+                                    <constraint firstAttribute="height" constant="44" id="ggz-QD-1OF"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="22"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="circleTapped:" destination="6E3-Aa-boC" eventType="touchUpInside" id="Lyp-Lm-1lI"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0023.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6Ce-Sz-7Nx">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bUQ-dw-bXo"/>
+                                    <constraint firstAttribute="width" constant="300" id="tRj-ie-ii6"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.73725490199999999" green="0.38431372549999998" blue="0.70588235290000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="6Ce-Sz-7Nx" secondAttribute="centerX" id="0Rl-uU-I0v"/>
+                            <constraint firstAttribute="centerY" secondItem="6Ce-Sz-7Nx" secondAttribute="centerY" id="Jxv-xA-6yk"/>
+                            <constraint firstItem="0Uw-82-PXI" firstAttribute="top" secondItem="MTr-Zs-Mrj" secondAttribute="bottom" constant="10" id="K5j-Kz-Rhj"/>
+                            <constraint firstItem="0Uw-82-PXI" firstAttribute="trailing" secondItem="YYD-oO-vrn" secondAttribute="trailingMargin" constant="10" id="w2p-CI-3hW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="0Uw-82-PXI" id="h0Z-4R-d7b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gDF-rR-Ufx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1682" y="-412"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZTJ-xR-AaK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="UG3-1R-iF4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TTG-Zn-FXd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="zFL-Zn-rUj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q53-xk-ih3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="-412"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="IMG_0023.jpg" width="2448" height="2448"/>
+        <image name="IMG_0024.jpg" width="2448" height="2448"/>
+    </resources>
 </document>
