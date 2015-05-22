@@ -44,6 +44,7 @@
 		221A2DEE1B0E785900E356C3 /* IMG_0023.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0023.jpg; sourceTree = "<group>"; };
 		221A2DF11B0E7ADB00E356C3 /* NavigationControllerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationControllerDelegate.swift; sourceTree = "<group>"; };
 		221A2DF31B0E7C6D00E356C3 /* CircleTransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleTransitionAnimator.swift; sourceTree = "<group>"; };
+		221A2DF51B0E7F1100E356C3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 		221A2DBF1B0E72C700E356C3 = {
 			isa = PBXGroup;
 			children = (
+				221A2DF51B0E7F1100E356C3 /* README.md */,
 				221A2DCA1B0E72C700E356C3 /* CircleNavigationTransition */,
 				221A2DE01B0E72C700E356C3 /* CircleNavigationTransitionTests */,
 				221A2DC91B0E72C700E356C3 /* Products */,

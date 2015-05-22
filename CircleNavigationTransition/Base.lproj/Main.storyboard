@@ -137,7 +137,11 @@
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q53-xk-ih3" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="sXG-lQ-VAh" customClass="NavigationControllerDelegate" customModule="CircleNavigationTransition" customModuleProvider="target"/>
+                <customObject id="sXG-lQ-VAh" customClass="NavigationControllerDelegate" customModule="CircleNavigationTransition" customModuleProvider="target">
+                    <connections>
+                        <outlet property="navigationController" destination="UG3-1R-iF4" id="uNj-fW-u8a"/>
+                    </connections>
+                </customObject>
             </objects>
             <point key="canvasLocation" x="283" y="-412"/>
         </scene>
